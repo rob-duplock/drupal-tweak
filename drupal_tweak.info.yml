@@ -1,0 +1,6 @@
+name: 'Drupal tweak'
+type: module
+description: 'A toolkit for Drupal developers and themers.'
+core: 8.x
+package: 'Development'
+version: 8.x-1.0

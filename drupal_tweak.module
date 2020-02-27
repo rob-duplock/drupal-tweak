@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains drupal_tweak.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function drupal_tweak_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the dev_mode module.
+    case 'help.page.dev_mode':
+      $output = '';
+      $output .= '<h3>' . t('Drupal tweak') . '</h3>';
+      $output .= '<p>' . t('@TODO') . '</p>';
+      return $output;
+
+    default:
+  }
+}

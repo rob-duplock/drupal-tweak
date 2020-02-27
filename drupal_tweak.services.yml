@@ -1,0 +1,4 @@
+services:
+  drupal.tweak:
+    class: Drupal\drupal_tweak\DrupalTweakService
+    arguments: ['@request_stack', '@entity.query', '@current_user', '@current_route_match', '@entity.form_builder', '@menu.link_tree', '@renderer', '@entity_type.manager', '@plugin.manager.block', '@form_builder', '@config.factory', '@theme.manager']
